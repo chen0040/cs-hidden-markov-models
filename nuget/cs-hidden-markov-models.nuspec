@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>cs-hidden-markov-models</id>
+    <version>1.0.1</version>
+    <authors>chen0040</authors>
+    <owners>chen0040</owners>
+    <licenseUrl>https://github.com/chen0040/cs-hidden-markov-models/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/chen0040/cs-hidden-markov-models</projectUrl>
+    <iconUrl>https://rawgit.com/chen0040/cs-hidden-markov-models/master/icon.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>cs-hidden-markov-models</description>
+    <releaseNotes>Hidden Markov Models</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>hidden-markov-models, c-sharp</tags>
+    <dependencies>
+      
+    </dependencies>
+  </metadata>
+</package>
