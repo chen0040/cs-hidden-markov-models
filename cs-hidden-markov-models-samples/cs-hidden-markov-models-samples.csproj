@@ -43,13 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FTANCOVA.cs" />
-    <Compile Include="FTLogNormal.cs" />
-    <Compile Include="FTMatrix.cs" />
-    <Compile Include="FTMedian.cs" />
-    <Compile Include="FTMergeSort.cs" />
-    <Compile Include="FTPercentileFunction.cs" />
-    <Compile Include="FTQuantileFunction.cs" />
+    <Compile Include="HiddenMarkovClassifierUT.Learning.cs" />
+    <Compile Include="HiddenMarkovModelUT.BaumWelchLearning.cs" />
+    <Compile Include="HiddenMarkovModelUT.Evaluate.cs" />
+    <Compile Include="HiddenMarkovModelUT.Generate.cs" />
+    <Compile Include="HiddenMarkovModelUT.MaximumLikelihoodLearning.cs" />
+    <Compile Include="HiddenMarkovModelUT.ViterbiLearning.cs" />
+    <Compile Include="MathUtils\FTANCOVA.cs" />
+    <Compile Include="MathUtils\FTLogNormal.cs" />
+    <Compile Include="MathUtils\FTMatrix.cs" />
+    <Compile Include="MathUtils\FTMedian.cs" />
+    <Compile Include="MathHelpers\FTMergeSort.cs" />
+    <Compile Include="MathUtils\FTPercentileFunction.cs" />
+    <Compile Include="MathUtils\FTQuantileFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
