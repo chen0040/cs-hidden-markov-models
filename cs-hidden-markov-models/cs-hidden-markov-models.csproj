@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{812A4C20-2223-4093-A482-186CDDE79470}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cs_hidden_markov_models</RootNamespace>
+    <AssemblyName>cs-hidden-markov-models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="ForwardBackwardAlgorithm.cs" />
+    <Compile Include="ForwardBackwardAlgorithm.Log.Continuous.cs" />
+    <Compile Include="ForwardBackwardAlgorithm.Log.cs" />
+    <Compile Include="Helpers\Codification.cs" />
+    <Compile Include="Helpers\DiagnosticsHelper.cs" />
+    <Compile Include="Helpers\MathHelper.cs" />
+    <Compile Include="Helpers\ValidationHelper.cs" />
+    <Compile Include="HiddenMarkovClassifier.Continuous.cs" />
+    <Compile Include="HiddenMarkovClassifier.cs" />
+    <Compile Include="HiddenMarkovModel.Continuous.cs" />
+    <Compile Include="HiddenMarkovModel.cs" />
+    <Compile Include="HiddenMarkovModel.Generate.cs" />
+    <Compile Include="HiddenMarkovModel.Predict.cs" />
+    <Compile Include="Learning\Supervised\HiddenMarkovClassifierLearning.Continuous.cs" />
+    <Compile Include="Learning\Supervised\HiddenMarkovClassifierLearning.cs" />
+    <Compile Include="Learning\Supervised\MaximumLikelihoodLearning.Continuous.cs" />
+    <Compile Include="Learning\Supervised\MaximumLikelihoodLearning.cs" />
+    <Compile Include="Learning\Unsupervised\BaumWelchLearning.Continuous.cs" />
+    <Compile Include="Learning\Unsupervised\BaumWelchLearning.cs" />
+    <Compile Include="Learning\Unsupervised\IUnsupervisedLearning.Continuous.cs" />
+    <Compile Include="Learning\Unsupervised\IUnsupervisedLearning.cs" />
+    <Compile Include="Learning\Unsupervised\ViterbiLearning.Continuous.cs" />
+    <Compile Include="Learning\Unsupervised\ViterbiLearning.cs" />
+    <Compile Include="MathUtils\Constants.cs" />
+    <Compile Include="MathUtils\Distribution\Binomial.cs" />
+    <Compile Include="MathUtils\Distribution\ChiSquare.cs" />
+    <Compile Include="MathUtils\Distribution\DistributionModel.cs" />
+    <Compile Include="MathUtils\Distribution\Erlang.cs" />
+    <Compile Include="MathUtils\Distribution\Exponential.cs" />
+    <Compile Include="MathUtils\Distribution\FDistribution.cs" />
+    <Compile Include="MathUtils\Distribution\Gaussian.cs" />
+    <Compile Include="MathUtils\Distribution\LogNormal.cs" />
+    <Compile Include="MathUtils\Distribution\MultivariateDistributionModel.cs" />
+    <Compile Include="MathUtils\Distribution\Poisson.cs" />
+    <Compile Include="MathUtils\Distribution\StudentT.cs" />
+    <Compile Include="MathHelpers\Factorial.cs" />
+    <Compile Include="MathHelpers\Gamma.cs" />
+    <Compile Include="MathHelpers\LogHelper.cs" />
+    <Compile Include="MathHelpers\MergeSort.cs" />
+    <Compile Include="MathHelpers\PolynomialHelper.cs" />
+    <Compile Include="MathUtils\LinearAlgebra\MatrixOp.cs" />
+    <Compile Include="MathUtils\SpecialFunctions\ClampFunction.cs" />
+    <Compile Include="MathUtils\SpecialFunctions\ErrorFunction.cs" />
+    <Compile Include="MathUtils\SpecialFunctions\GammaFunction.cs" />
+    <Compile Include="MathUtils\SpecialFunctions\InverseErrorFunction.cs" />
+    <Compile Include="MathUtils\SpecialFunctions\InverseLogitFunction.cs" />
+    <Compile Include="MathUtils\SpecialFunctions\LogitFunction.cs" />
+    <Compile Include="MathUtils\Statistics\ANCOVA.cs" />
+    <Compile Include="MathUtils\Statistics\ANCOVAv2.cs" />
+    <Compile Include="MathUtils\Statistics\ANOVA.cs" />
+    <Compile Include="MathUtils\Statistics\Bootstrapping.cs" />
+    <Compile Include="MathUtils\Statistics\ChiSquareGOFTest.cs" />
+    <Compile Include="MathUtils\Statistics\ChiSquareIndependenceTest.cs" />
+    <Compile Include="MathUtils\Statistics\CLT.cs" />
+    <Compile Include="MathUtils\Statistics\CollectionExtensionMethods.cs" />
+    <Compile Include="MathUtils\Statistics\ConfidenceInterval.cs" />
+    <Compile Include="MathUtils\Statistics\Correlation.cs" />
+    <Compile Include="MathUtils\Statistics\DescriptiveStatistics.cs" />
+    <Compile Include="MathUtils\Statistics\HypothesisTesting.cs" />
+    <Compile Include="MathUtils\Statistics\HypothesisTestingForProportion.cs" />
+    <Compile Include="MathUtils\Statistics\LinearCombination.cs" />
+    <Compile Include="MathUtils\Statistics\MANCOVA.cs" />
+    <Compile Include="MathUtils\Statistics\MANOVA.cs" />
+    <Compile Include="MathUtils\Statistics\Mean.cs" />
+    <Compile Include="MathUtils\Statistics\Median.cs" />
+    <Compile Include="MathUtils\Statistics\MultipleComparisons.cs" />
+    <Compile Include="MathUtils\Statistics\Sample.cs" />
+    <Compile Include="MathUtils\Statistics\StandardError.cs" />
+    <Compile Include="MathUtils\Statistics\StdDev.cs" />
+    <Compile Include="MathUtils\Statistics\TwoWayANOVA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Topology\Ergodic.cs" />
+    <Compile Include="Topology\Forward.cs" />
+    <Compile Include="Topology\ITopology.cs" />
+    <Compile Include="Viterbi.cs" />
+    <Compile Include="Viterbi.Log.Continuous.cs" />
+    <Compile Include="Viterbi.Log.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
