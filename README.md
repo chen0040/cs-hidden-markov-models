@@ -1,6 +1,12 @@
 # cs-hidden-markov-models
 
-Hidden Markov Models using C#
+Hidden Markov Models using C#. Hidden Markov Models for sequence generation, event sequence prediction, supervised learning on temporal sequence. The library is built on .NET 4.5.2.
+
+# Install
+
+```bash
+Install-Package cs-hidden-markov-models -Version 1.0.1
+```
 
 # Usage
 
